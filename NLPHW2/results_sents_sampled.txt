@@ -1,0 +1,60 @@
+original_sentence: לא נכנס לזה
+masked_sentence: [*] נכנס לזה
+plenary_sentence: אני נכנס לזה
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -19.08
+probability of plenary sentence in committee corpus: -14.18
+original_sentence: אם שאר נציגי הערוצים היו מגיעים לכאן היית שומעת אותי אומר דברים קשים על השחיתות הכלכלית המוסרית והחינוכית המוטמעת ביסודותיהם של הערוצים האלו שכל מה שמעניין אותם זה בצע הכסף והשחתת המידות
+masked_sentence: אם [*] [*] הערוצים היו מגיעים לכאן היית שומעת אותי אומר דברים קשים על השחיתות הכלכלית המוסרית והחינוכית המוטמעת ביסודותיהם של הערוצים האלו שכל מה שמעניין אותם [*] בצע הכסף והשחתת המידות
+plenary_sentence: אם כן אנחנו הערוצים היו מגיעים לכאן היית שומעת אותי אומר דברים קשים על השחיתות הכלכלית המוסרית והחינוכית המוטמעת ביסודותיהם של הערוצים האלו שכל מה שמעניין אותם זה בצע הכסף והשחתת המידות
+plenary_tokens: כן,אנחנו,זה
+probability of plenary sentence in plenary corpus: -346.83
+probability of plenary sentence in committee corpus: -68.75
+original_sentence: מה לך להתערב בכלל
+masked_sentence: [*] לך להתערב בכלל
+plenary_sentence: אני לך להתערב בכלל
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -33.37
+probability of plenary sentence in committee corpus: -21.88
+original_sentence: אני רוצה לסכם
+masked_sentence: [*] רוצה לסכם
+plenary_sentence: אני רוצה לסכם
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -9.05
+probability of plenary sentence in committee corpus: -8.31
+original_sentence: אני מניח שהוא לא התכוון לגבולות ההבטחה של אברהם אבינו
+masked_sentence: אני מניח שהוא [*] התכוון לגבולות ההבטחה של אברהם אבינו
+plenary_sentence: אני מניח שהוא לא התכוון לגבולות ההבטחה של אברהם אבינו
+plenary_tokens: לא
+probability of plenary sentence in plenary corpus: -57.90
+probability of plenary sentence in committee corpus: -25.38
+original_sentence: אמרתי אנחנו בתהליך של לימוד וממכרז למכרז אנחנו משפרים
+masked_sentence: אמרתי אנחנו בתהליך של לימוד וממכרז למכרז אנחנו [*]
+plenary_sentence: אמרתי אנחנו בתהליך של לימוד וממכרז למכרז אנחנו עוברים
+plenary_tokens: עוברים
+probability of plenary sentence in plenary corpus: -90.65
+probability of plenary sentence in committee corpus: -23.55
+original_sentence: יש הערה לממשלה
+masked_sentence: יש הערה [*]
+plenary_sentence: יש הערה אחת
+plenary_tokens: אחת
+probability of plenary sentence in plenary corpus: -18.02
+probability of plenary sentence in committee corpus: -11.28
+original_sentence: היהודים בונים לא בשביל לשפר דיור אלא הם בונים בשביל מפעלי תעשייה וקניונים מסחריים
+masked_sentence: [*] בונים לא בשביל לשפר דיור אלא הם בונים בשביל מפעלי תעשייה וקניונים מסחריים
+plenary_sentence: אני בונים לא בשביל לשפר דיור אלא הם בונים בשביל מפעלי תעשייה וקניונים מסחריים
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -142.88
+probability of plenary sentence in committee corpus: -36.49
+original_sentence: כפי שניסחנו בחנ ז
+masked_sentence: כפי [*] בחנ ז
+plenary_sentence: כפי שאמרתי בחנ ז
+plenary_tokens: שאמרתי
+probability of plenary sentence in plenary corpus: -51.88
+probability of plenary sentence in committee corpus: -22.63
+original_sentence: לא איכפת לי להמשיך לגור בקרוואן יש לי קרוואן מאוד יפה עם מכונת אספרסו קטנה ונוף יפה
+masked_sentence: לא איכפת לי להמשיך לגור בקרוואן יש לי קרוואן מאוד יפה עם מכונת [*] קטנה ונוף יפה
+plenary_sentence: לא איכפת לי להמשיך לגור בקרוואן יש לי קרוואן מאוד יפה עם מכונת אמת קטנה ונוף יפה
+plenary_tokens: אמת
+probability of plenary sentence in plenary corpus: -255.54
+probability of plenary sentence in committee corpus: -54.53
