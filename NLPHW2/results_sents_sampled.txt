@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 original_sentence: לא נכנס לזה
 masked_sentence: [*] נכנס לזה
 plenary_sentence: אני נכנס לזה
@@ -58,3 +59,65 @@ plenary_sentence: לא איכפת לי להמשיך לגור בקרוואן יש
 plenary_tokens: אמת
 probability of plenary sentence in plenary corpus: -255.54
 probability of plenary sentence in committee corpus: -54.53
+=======
+original_sentence: אני מנצל את המעמד שהשר נמצא פה צריך באמת לראות מה ניתן
+masked_sentence: אני מנצל את המעמד שהשר נמצא [*] צריך באמת לראות מה ניתן
+plenary_sentence: אני מנצל את המעמד שהשר נמצא את צריך באמת לראות מה ניתן
+plenary_tokens: את
+probability of plenary sentence in plenary corpus: -92.83
+probability of plenary sentence in committee corpus: -90.52
+original_sentence: אם הוא לא יודע שזה העתק אולי האפשרות שלו חלשה יותר
+masked_sentence: אם הוא לא יודע שזה העתק אולי האפשרות שלו [*] יותר
+plenary_sentence: אם הוא לא יודע שזה העתק אולי האפשרות שלו את יותר
+plenary_tokens: את
+probability of plenary sentence in plenary corpus: -81.04
+probability of plenary sentence in committee corpus: -76.64
+original_sentence: גם המנגנון של הוועדה עורכי הדין והיועצים צובר ידע בנושאים הנידונים שם
+masked_sentence: [*] המנגנון של הוועדה עורכי הדין והיועצים צובר ידע בנושאים הנידונים שם
+plenary_sentence: אני המנגנון של הוועדה עורכי הדין והיועצים צובר ידע בנושאים הנידונים שם
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -108.92
+probability of plenary sentence in committee corpus: -101.05
+original_sentence: זאת פעם ראשונה שקורה מקרה כזה
+masked_sentence: זאת [*] ראשונה שקורה מקרה כזה
+plenary_sentence: זאת את ראשונה שקורה מקרה כזה
+plenary_tokens: את
+probability of plenary sentence in plenary corpus: -48.31
+probability of plenary sentence in committee corpus: -47.16
+original_sentence: יש חוק ואת החוק צריך לאכוף
+masked_sentence: יש חוק ואת החוק צריך [*]
+plenary_sentence: יש חוק ואת החוק צריך את
+plenary_tokens: את
+probability of plenary sentence in plenary corpus: -40.16
+probability of plenary sentence in committee corpus: -39.87
+original_sentence: מי מייצג את שרת התרבות והספורט
+masked_sentence: [*] מייצג את שרת התרבות והספורט
+plenary_sentence: אני מייצג את שרת התרבות והספורט
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -44.75
+probability of plenary sentence in committee corpus: -44.85
+original_sentence: לצערי רובם לא יודעים שהם עוברים על החוק כשהם עושים את זה
+masked_sentence: לצערי רובם לא יודעים שהם עוברים על [*] כשהם עושים את זה
+plenary_sentence: לצערי רובם לא יודעים שהם עוברים על את כשהם עושים את זה
+plenary_tokens: את
+probability of plenary sentence in plenary corpus: -88.48
+probability of plenary sentence in committee corpus: -87.15
+original_sentence: כי רוצים לעשות זאת כחלק מהרפורמה כחלק מהראייה הכוללת
+masked_sentence: כי רוצים [*] זאת כחלק מהרפורמה כחלק מהראייה הכוללת
+plenary_sentence: כי רוצים את זאת כחלק מהרפורמה כחלק מהראייה הכוללת
+plenary_tokens: את
+probability of plenary sentence in plenary corpus: -82.48
+probability of plenary sentence in committee corpus: -76.91
+original_sentence: לא זה לא בגלל האלמן והאלמנה אלא השאלה מי יממן את זה
+masked_sentence: לא זה [*] בגלל האלמן והאלמנה אלא השאלה מי יממן את זה
+plenary_sentence: לא זה לא בגלל האלמן והאלמנה אלא השאלה מי יממן את זה
+plenary_tokens: לא
+probability of plenary sentence in plenary corpus: -91.88
+probability of plenary sentence in committee corpus: -84.04
+original_sentence: לא הן לא ידועות לכולם
+masked_sentence: לא הן [*] ידועות לכולם
+plenary_sentence: לא הן את ידועות לכולם
+plenary_tokens: את
+probability of plenary sentence in plenary corpus: -39.66
+probability of plenary sentence in committee corpus: -38.10
+>>>>>>> 5f23842b48a7cbb102912fff1715a817a6427478
