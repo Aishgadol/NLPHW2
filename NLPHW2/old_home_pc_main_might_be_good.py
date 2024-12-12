@@ -237,7 +237,7 @@ def compute_perplexity_of_masked_tokens(lm, original_masked_sentences, filled_se
 
 
 def main():
-    jsonl_file = "result.jsonl"
+    jsonl_file = "result_cleaned.jsonl"
     if not os.path.exists(jsonl_file):
         print("result.jsonl not found.")
         sys.exit(1)

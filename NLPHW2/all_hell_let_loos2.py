@@ -260,7 +260,7 @@ def main():
     if sample_size==0:
         print("No committee sents.")
         sys.exit(1)
-    random.seed(42)
+    random.seed(412)
     sampled_raw=random.sample(c_texts,sample_size)
     sampled=[" ".join(tokenize_sentence(s)) for s in sampled_raw if tokenize_sentence(s)]
     if not sampled:
