@@ -1,60 +1,60 @@
-original_sentence: לעומת זאת כאשר הממשלה כן תומכת בהצעת החוק הזאת איננו צריכים לגייס חברי כנסת כדי להצביע בהחלטה הזאת
-masked_sentence: לעומת זאת כאשר הממשלה כן תומכת בהצעת החוק הזאת איננו צריכים לגייס חברי כנסת [*] להצביע בהחלטה הזאת
-plenary_sentence: לעומת זאת כאשר הממשלה כן תומכת בהצעת החוק הזאת איננו צריכים לגייס חברי כנסת נכבדה להצביע בהחלטה הזאת
-plenary_tokens: נכבדה
-probability of plenary sentence in plenary corpus: -102.74
-probability of plenary sentence in committee corpus: -55.31
-original_sentence: אמנם זה נושא שאני גם מסכימה שדורש מאתנו קידום חקיקה לייצוג הולם לנשים בחברות הממשלתיות אבל לפחות עכשיו אני חושבת שחשוב לקדם מהלך של שריון מקומות לנשים בחברות הממשלתיות
-masked_sentence: [*] זה נושא שאני גם מסכימה שדורש מאתנו קידום חקיקה לייצוג הולם לנשים בחברות הממשלתיות [*] לפחות עכשיו אני חושבת שחשוב לקדם מהלך של שריון מקומות לנשים בחברות הממשלתיות
-plenary_sentence: אני זה נושא שאני גם מסכימה שדורש מאתנו קידום חקיקה לייצוג הולם לנשים בחברות הממשלתיות תיקון לפחות עכשיו אני חושבת שחשוב לקדם מהלך של שריון מקומות לנשים בחברות הממשלתיות
-plenary_tokens: אני,תיקון
-probability of plenary sentence in plenary corpus: -219.29
-probability of plenary sentence in committee corpus: -79.47
-original_sentence: הרי יש אחד שחושב שצריך להוריד את הריבית ואחר שחושב שצריך להעלות אותה הכל לטובת המשק הלאומי
-masked_sentence: הרי יש [*] שחושב שצריך להוריד את הריבית ואחר שחושב שצריך להעלות אותה הכל לטובת המשק הלאומי
-plenary_sentence: הרי יש פה שחושב שצריך להוריד את הריבית ואחר שחושב שצריך להעלות אותה הכל לטובת המשק הלאומי
-plenary_tokens: פה
-probability of plenary sentence in plenary corpus: -113.88
-probability of plenary sentence in committee corpus: -42.63
-original_sentence: אנחנו רואים ערך חשוב שהמידע שיהיה בידי המשטרה יהיה גם מאנשים ארכיאולוגים שלפי הבנתנו אין להם שום זיקות פוליטיות ואין מאחורי דבריהם שום מניעים פוליטיים או מדיניים אלא עניינם זה שמירת הנכסים הארכיאולוגים של האנושות בכלל ושל העם היהודי בפרט
-masked_sentence: אנחנו רואים ערך חשוב שהמידע שיהיה בידי המשטרה יהיה גם מאנשים [*] שלפי הבנתנו אין להם שום זיקות פוליטיות ואין מאחורי דבריהם [*] מניעים פוליטיים או מדיניים אלא עניינם זה שמירת הנכסים [*] של האנושות בכלל ושל העם [*] בפרט
-plenary_sentence: אנחנו רואים ערך חשוב שהמידע שיהיה בידי המשטרה יהיה גם מאנשים עם שלפי הבנתנו אין להם שום זיקות פוליטיות ואין מאחורי דבריהם על מניעים פוליטיים או מדיניים אלא עניינם זה שמירת הנכסים של של האנושות בכלל ושל העם היהודי בפרט
-plenary_tokens: עם,על,של,היהודי
-probability of plenary sentence in plenary corpus: -363.53
-probability of plenary sentence in committee corpus: -113.37
-original_sentence: לעומת זאת האומנות והספרות פועלים בדיוק בכיוון ההפוך
-masked_sentence: לעומת זאת האומנות והספרות [*] בדיוק בכיוון ההפוך
-plenary_sentence: לעומת זאת האומנות והספרות והתרבות בדיוק בכיוון ההפוך
-plenary_tokens: והתרבות
-probability of plenary sentence in plenary corpus: -73.35
-probability of plenary sentence in committee corpus: -40.20
-original_sentence: באחד הדיונים הקודמים לפני שנים אחדות הצבענו על תוכנית ששודרה בניו זילנד למבוגרים בלבד ובארץ שודרה בשעה אחת בצוהריים בלשים בג ינס
-masked_sentence: באחד הדיונים הקודמים לפני שנים אחדות הצבענו על [*] ששודרה בניו זילנד למבוגרים בלבד ובארץ שודרה בשעה אחת בצוהריים בלשים [*] ינס
-plenary_sentence: באחד הדיונים הקודמים לפני שנים אחדות הצבענו על סעיף ששודרה בניו זילנד למבוגרים בלבד ובארץ שודרה בשעה אחת בצוהריים בלשים של ינס
-plenary_tokens: סעיף,של
-probability of plenary sentence in plenary corpus: -293.98
-probability of plenary sentence in committee corpus: -71.88
-original_sentence: שוחחתי גם עם מנכ ל ערוץ
-masked_sentence: שוחחתי גם [*] מנכ ל ערוץ
-plenary_sentence: שוחחתי גם את מנכ ל ערוץ
-plenary_tokens: את
-probability of plenary sentence in plenary corpus: -41.37
-probability of plenary sentence in committee corpus: -31.72
-original_sentence: בהתנדבות זה לא ילך
-masked_sentence: בהתנדבות זה [*] ילך
-plenary_sentence: בהתנדבות זה לא ילך
-plenary_tokens: לא
-probability of plenary sentence in plenary corpus: -35.22
-probability of plenary sentence in committee corpus: -19.06
-original_sentence: בוודאי שהוא התכוון
-masked_sentence: בוודאי שהוא [*]
-plenary_sentence: בוודאי שהוא לא
-plenary_tokens: לא
-probability of plenary sentence in plenary corpus: -17.85
-probability of plenary sentence in committee corpus: -13.77
-original_sentence: בעניין אחד אני מאוד מסכים עם דניאל כהן שגיא שמי שנותן את הטוען ואף אחד לא יכול להחליף אותו אלה אנשי המנהיגות הפוליטית
-masked_sentence: בעניין אחד אני מאוד מסכים עם דניאל כהן שגיא שמי שנותן את [*] ואף [*] לא יכול להחליף אותו אלה אנשי המנהיגות הפוליטית
-plenary_sentence: בעניין אחד אני מאוד מסכים עם דניאל כהן שגיא שמי שנותן את הרשיון ואף אחד לא יכול להחליף אותו אלה אנשי המנהיגות הפוליטית
-plenary_tokens: הרשיון,אחד
-probability of plenary sentence in plenary corpus: -163.20
-probability of plenary sentence in committee corpus: -72.59
+original_sentence: לדעתי כדאי שתבדקו את זה בחוק התכנון והבניה .
+masked_sentence: לדעתי כדאי שתבדקו את זה [*] התכנון והבניה .
+plenary_sentence: לדעתי כדאי שתבדקו את זה , התכנון והבניה .
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -73.03
+probability of plenary sentence in committee corpus: -65.81
+original_sentence: אפילו החלנו עליהם את חוק רשות השידור בעניין גביית אגרה .
+masked_sentence: אפילו החלנו עליהם את חוק [*] השידור בעניין גביית אגרה .
+plenary_sentence: אפילו החלנו עליהם את חוק , השידור בעניין גביית אגרה .
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -96.45
+probability of plenary sentence in committee corpus: -92.05
+original_sentence: אני יכול להגיד לך , ואני אומר את זה לכל חברי הכנסת , שב 4 - השנים שהייתי שר האוצר נצבעו תקציבים ונפתחו סעיפים , גם בתחום התחבורה , גם בתחום השיכון , בהרבה מאוד תחומים .
+masked_sentence: אני יכול להגיד [*] , ואני אומר את [*] לכל [*] הכנסת , שב 4 - השנים שהייתי שר האוצר נצבעו תקציבים ונפתחו סעיפים , גם בתחום התחבורה , גם בתחום השיכון , בהרבה מאוד תחומים .
+plenary_sentence: אני יכול להגיד , , ואני אומר את זה לכל , הכנסת , שב 4 - השנים שהייתי שר האוצר נצבעו תקציבים ונפתחו סעיפים , גם בתחום התחבורה , גם בתחום השיכון , בהרבה מאוד תחומים .
+plenary_tokens: ,,זה,,
+probability of plenary sentence in plenary corpus: -284.05
+probability of plenary sentence in committee corpus: -278.55
+original_sentence: אלו זכויות אמיתיות , שהיא קיבלה את הזכות להשתמש בהן , ואמורה להיות להן משמעות בתהליך .
+masked_sentence: אלו זכויות אמיתיות , שהיא קיבלה את הזכות להשתמש בהן [*] ואמורה להיות להן משמעות בתהליך .
+plenary_sentence: אלו זכויות אמיתיות , שהיא קיבלה את הזכות להשתמש בהן , ואמורה להיות להן משמעות בתהליך .
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -153.80
+probability of plenary sentence in committee corpus: -142.43
+original_sentence: המאמר של שלג ?
+masked_sentence: המאמר של [*] ?
+plenary_sentence: המאמר של , ?
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -30.66
+probability of plenary sentence in committee corpus: -29.97
+original_sentence: ממוצע שעות הצפייה של ילד בישראל בטלוויזיה או בוידאו , הוא 3.1 שעות ליום , כשלזה נוספת שעה וחצי של משחקי מחשב .
+masked_sentence: ממוצע שעות הצפייה של ילד בישראל בטלוויזיה [*] בוידאו , הוא 3.1 שעות ליום , כשלזה נוספת שעה וחצי של משחקי מחשב [*]
+plenary_sentence: ממוצע שעות הצפייה של ילד בישראל בטלוויזיה , בוידאו , הוא 3.1 שעות ליום , כשלזה נוספת שעה וחצי של משחקי מחשב ,
+plenary_tokens: ,,,
+probability of plenary sentence in plenary corpus: -212.30
+probability of plenary sentence in committee corpus: -195.40
+original_sentence: זה חייב להיות לדעתי מין ערבות של הרשות המקומית , כי מה אם התאגיד הזה נניח יפשוט רגל ?
+masked_sentence: זה חייב להיות לדעתי מין [*] של הרשות המקומית , כי מה אם התאגיד הזה נניח יפשוט רגל ?
+plenary_sentence: זה חייב להיות לדעתי מין , של הרשות המקומית , כי מה אם התאגיד הזה נניח יפשוט רגל ?
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -157.81
+probability of plenary sentence in committee corpus: -145.63
+original_sentence: היה צריך ניסוח של חבר הכנסת מג'אדלה כדי שיהיה ברור שמה שאתה אמרת , הוא לא איום במלחמה ובאלימות .
+masked_sentence: [*] צריך ניסוח של חבר הכנסת מג'אדלה כדי שיהיה ברור שמה שאתה אמרת [*] הוא לא איום במלחמה ובאלימות .
+plenary_sentence: אני צריך ניסוח של חבר הכנסת מג'אדלה כדי שיהיה ברור שמה שאתה אמרת , הוא לא איום במלחמה ובאלימות .
+plenary_tokens: אני,,
+probability of plenary sentence in plenary corpus: -158.46
+probability of plenary sentence in committee corpus: -155.12
+original_sentence: מי שבא ואין גן במקום , הוא לא יבוא אלא ילך למקום בו יש גן .
+masked_sentence: מי שבא [*] גן במקום , הוא לא יבוא אלא ילך למקום בו יש גן .
+plenary_sentence: מי שבא , גן במקום , הוא לא יבוא אלא ילך למקום בו יש גן .
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -133.29
+probability of plenary sentence in committee corpus: -126.52
+original_sentence: אם אחרון העמיתים ילך לעולמו .
+masked_sentence: אם אחרון העמיתים ילך [*] .
+plenary_sentence: אם אחרון העמיתים ילך , .
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -47.86
+probability of plenary sentence in committee corpus: -44.32

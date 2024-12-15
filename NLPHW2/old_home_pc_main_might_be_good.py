@@ -104,17 +104,17 @@ def read_corpus(jsonl_file):
                 # Convert Hebrew to English type:
                 # "ועדה" => "committee"
                 # "מליאה" => "plenary"
-                t = obj["type_protocol"].strip()
-                if t == "ועדה":
+                t = obj["protocol_type"].strip()
+                if t == "committee":
                     t = "committee"
-                elif t == "מליאה":
+                elif t == "plenary":
                     t = "plenary"
-                txt = obj["text_sentence"].strip()
+                txt = obj["sentence_text"].strip()
                 data.append((t, txt))
-    df = pd.DataFrame(data, columns=["type_protocol", "text_sentence"])
+    df = pd.DataFrame(data, columns=["protocol_type", "sentence_text"])
     print("Finished reading corpus.")
-    committee_df = df[df.type_protocol == "committee"].copy()
-    plenary_df = df[df.type_protocol == "plenary"].copy()
+    committee_df = df[df.protocol_type == "committee"].copy()
+    plenary_df = df[df.protocol_type == "plenary"].copy()
     print(f"Committee sentences: {len(committee_df)}, Plenary sentences: {len(plenary_df)}")
     return committee_df, plenary_df
 
@@ -126,7 +126,7 @@ def tokenize_sentence(sent):
 def build_model(df):
     print("Building model...")
     sentences = []
-    for txt in df["text_sentence"]:
+    for txt in df["sentence_text"]:
         tokens = tokenize_sentence(txt)
         sentences.append(tokens)
     model = LM_Trigram(sentences)
@@ -135,7 +135,7 @@ def build_model(df):
 
 
 def get_k_n_t_collocations(k, n, t, corpus_df, metric_type="frequency"):
-    docs = corpus_df["text_sentence"].tolist()
+    docs = corpus_df["sentence_text"].tolist()
     ngram_doc_freq = {}
     for i, doc in enumerate(docs):
         tokens = tokenize_sentence(doc)
@@ -237,7 +237,7 @@ def compute_perplexity_of_masked_tokens(lm, original_masked_sentences, filled_se
 
 
 def main():
-    jsonl_file = "result_cleaned.jsonl"
+    jsonl_file = "result.jsonl"
     if not os.path.exists(jsonl_file):
         print("result.jsonl not found.")
         sys.exit(1)
@@ -284,7 +284,7 @@ def main():
                 f.write(f"{coll}\n")
             f.write("\n")
 
-    committee_sents = committee_df["text_sentence"].tolist()
+    committee_sents = committee_df["sentence_text"].tolist()
     if len(committee_sents) < 10:
         print("Not enough committee sentences to sample. Will sample fewer.")
     sample_size = min(10, len(committee_sents))

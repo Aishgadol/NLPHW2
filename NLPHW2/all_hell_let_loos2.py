@@ -169,10 +169,10 @@ def load_corpus(jsonl_path):
             if not line:
                 continue
             obj=json.loads(line)
-            tp=obj['type_protocol'].strip().lower()
-            txt=obj['text_sentence']
+            tp=obj['protocol_type'].strip().lower()
+            txt=obj['sentence_text']
             data.append((tp,txt))
-    df=pd.DataFrame(data,columns=["type_protocol","text_sentence"])
+    df=pd.DataFrame(data,columns=["protocol_type","sentence_text"])
     return df
 
 def mask_tokens_in_sentences(sents, x):
@@ -243,24 +243,24 @@ def main():
 
     print("Loading corpus...")
     df=load_corpus(json_file)
-    committee_df=df[df.type_protocol=="committee"].copy()
-    plenary_df=df[df.type_protocol=="plenary"].copy()
+    committee_df=df[df.protocol_type=="committee"].copy()
+    plenary_df=df[df.protocol_type=="plenary"].copy()
 
     print("Building committee KN LM...")
-    committee_sents=[tokenize_sentence(s) for s in committee_df["text_sentence"]]
+    committee_sents=[tokenize_sentence(s) for s in committee_df["sentence_text"]]
     committee_lm=KneserNeyTrigramLM(committee_sents, discount=0.75)
 
     print("Building plenary KN LM...")
-    plenary_sents=[tokenize_sentence(s) for s in plenary_df["text_sentence"]]
+    plenary_sents=[tokenize_sentence(s) for s in plenary_df["sentence_text"]]
     plenary_lm=KneserNeyTrigramLM(plenary_sents, discount=0.75)
 
     print("Sampling committee sentences...")
-    c_texts=committee_df["text_sentence"].tolist()
+    c_texts=committee_df["sentence_text"].tolist()
     sample_size=min(10,len(c_texts))
     if sample_size==0:
         print("No committee sents.")
         sys.exit(1)
-    random.seed(412)
+    random.seed(42)
     sampled_raw=random.sample(c_texts,sample_size)
     sampled=[" ".join(tokenize_sentence(s)) for s in sampled_raw if tokenize_sentence(s)]
     if not sampled:

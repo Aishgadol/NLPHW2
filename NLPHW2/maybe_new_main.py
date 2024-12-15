@@ -100,19 +100,19 @@ def read_corpus(path):
             if not line:
                 continue
             obj=json.loads(line)
-            tp=obj["type_protocol"].strip()
+            tp=obj["protocol_type"].strip()
             if tp=="ועדה":
                 tp="committee"
             elif tp=="מליאה":
                 tp="plenary"
-            txt=obj["text_sentence"]
+            txt=obj["sentence_text"]
             data.append((tp,txt))
-    df=pd.DataFrame(data,columns=["type_protocol","text_sentence"])
-    print("Committee:", len(df[df.type_protocol=="committee"]), "Plenary:", len(df[df.type_protocol=="plenary"]))
-    return df[df.type_protocol=="committee"].copy(), df[df.type_protocol=="plenary"].copy()
+    df=pd.DataFrame(data,columns=["protocol_type","sentence_text"])
+    print("Committee:", len(df[df.protocol_type=="committee"]), "Plenary:", len(df[df.protocol_type=="plenary"]))
+    return df[df.protocol_type=="committee"].copy(), df[df.protocol_type=="plenary"].copy()
 
 def get_k_n_t_collocations(k,n,t,corpus_df,metric_type="frequency"):
-    docs=corpus_df["text_sentence"].tolist()
+    docs=corpus_df["sentence_text"].tolist()
     ngram_doc_freq={}
     for i,doc in enumerate(docs):
         tokens=tokenize_sentence(doc)
@@ -217,11 +217,11 @@ def main():
     committee_df, plenary_df=read_corpus(json_file)
 
     print("Building committee model...")
-    committee_sents=[tokenize_sentence(s) for s in committee_df["text_sentence"]]
+    committee_sents=[tokenize_sentence(s) for s in committee_df["sentence_text"]]
     committee_lm=LM_Trigram(committee_sents,(0.1,0.2,0.7))
 
     print("Building plenary model...")
-    plenary_sents=[tokenize_sentence(s) for s in plenary_df["text_sentence"]]
+    plenary_sents=[tokenize_sentence(s) for s in plenary_df["sentence_text"]]
     plenary_lm=LM_Trigram(plenary_sents,(0.1,0.2,0.7))
 
     print("Extracting collocations...")
@@ -253,7 +253,7 @@ def main():
             f.write("\n")
 
     print("Sampling committee sentences...")
-    c_texts=committee_df["text_sentence"].tolist()
+    c_texts=committee_df["sentence_text"].tolist()
     sample_size=min(10,len(c_texts))
     if sample_size==0:
         print("No committee sentences.")

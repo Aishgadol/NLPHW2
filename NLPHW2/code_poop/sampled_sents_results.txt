@@ -1,0 +1,70 @@
+original_sentence: לא נכנס לזה .
+masked_sentence: [*] נכנס לזה .
+plenary_sentence: אני נכנס לזה .
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -31.75
+probability of plenary sentence in committee corpus: -29.76
+
+original_sentence: אם שאר נציגי הערוצים היו מגיעים לכאן היית שומעת אותי אומר דברים קשים על השחיתות הכלכלית , המוסרית והחינוכית , המוטמעת ביסודותיהם של הערוצים האלו , שכל מה שמעניין אותם זה בצע הכסף והשחתת המידות .
+masked_sentence: אם [*] [*] הערוצים היו מגיעים לכאן היית שומעת אותי אומר דברים קשים על השחיתות הכלכלית , המוסרית והחינוכית , המוטמעת ביסודותיהם של הערוצים האלו , שכל [*] שמעניין אותם זה בצע הכסף והשחתת המידות .
+plenary_sentence: אם , אני הערוצים היו מגיעים לכאן היית שומעת אותי אומר דברים קשים על השחיתות הכלכלית , המוסרית והחינוכית , המוטמעת ביסודותיהם של הערוצים האלו , שכל , שמעניין אותם זה בצע הכסף והשחתת המידות .
+plenary_tokens: ,, אני, ,
+probability of plenary sentence in plenary corpus: -337.57
+probability of plenary sentence in committee corpus: -321.17
+
+original_sentence: מה לך להתערב בכלל ?
+masked_sentence: [*] לך להתערב בכלל ?
+plenary_sentence: אני לך להתערב בכלל ?
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -43.82
+probability of plenary sentence in committee corpus: -41.98
+
+original_sentence: אני רוצה לסכם .
+masked_sentence: אני [*] לסכם .
+plenary_sentence: אני רוצה לסכם .
+plenary_tokens: רוצה
+probability of plenary sentence in plenary corpus: -25.75
+probability of plenary sentence in committee corpus: -25.65
+
+original_sentence: אני מניח שהוא לא התכוון לגבולות ההבטחה של אברהם אבינו .
+masked_sentence: אני מניח שהוא [*] התכוון לגבולות ההבטחה של אברהם אבינו .
+plenary_sentence: אני מניח שהוא , התכוון לגבולות ההבטחה של אברהם אבינו .
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -95.91
+probability of plenary sentence in committee corpus: -93.13
+
+original_sentence: אמרתי , אנחנו בתהליך של לימוד וממכרז למכרז אנחנו משפרים .
+masked_sentence: אמרתי , אנחנו בתהליך של לימוד וממכרז למכרז [*] משפרים .
+plenary_sentence: אמרתי , אנחנו בתהליך של לימוד וממכרז למכרז , משפרים .
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -95.47
+probability of plenary sentence in committee corpus: -91.99
+
+original_sentence: יש הערה לממשלה .
+masked_sentence: [*] הערה לממשלה .
+plenary_sentence: אני הערה לממשלה .
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -32.35
+probability of plenary sentence in committee corpus: -31.01
+
+original_sentence: היהודים בונים לא בשביל לשפר דיור , אלא הם בונים בשביל מפעלי תעשייה וקניונים מסחריים .
+masked_sentence: היהודים בונים לא בשביל לשפר דיור [*] אלא הם בונים בשביל מפעלי תעשייה וקניונים מסחריים .
+plenary_sentence: היהודים בונים לא בשביל לשפר דיור , אלא הם בונים בשביל מפעלי תעשייה וקניונים מסחריים .
+plenary_tokens: ,
+probability of plenary sentence in plenary corpus: -155.87
+probability of plenary sentence in committee corpus: -147.51
+
+original_sentence: כפי שניסחנו בחנ"ז .
+masked_sentence: כפי שניסחנו בחנ"ז [*]
+plenary_sentence: כפי שניסחנו בחנ"ז .
+plenary_tokens: .
+probability of plenary sentence in plenary corpus: -37.29
+probability of plenary sentence in committee corpus: -35.16
+
+original_sentence: לא איכפת לי להמשיך לגור בקרוואן , יש לי קרוואן מאוד יפה עם מכונת אספרסו קטנה ונוף יפה .
+masked_sentence: לא איכפת לי להמשיך לגור בקרוואן , [*] לי קרוואן מאוד יפה עם מכונת אספרסו קטנה ונוף יפה .
+plenary_sentence: לא איכפת לי להמשיך לגור בקרוואן , אני לי קרוואן מאוד יפה עם מכונת אספרסו קטנה ונוף יפה .
+plenary_tokens: אני
+probability of plenary sentence in plenary corpus: -181.03
+probability of plenary sentence in committee corpus: -170.64
+
