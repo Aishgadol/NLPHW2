@@ -146,25 +146,71 @@ def get_k_n_t_collocations(k, n, t, corpus_df, metric_type):
 
     return []
 
+# def write_collocations_to_file(collocations, file_path):
+#     # writes the collocations to a text file
+#     with open(file_path, 'w', encoding='utf-8') as f:
+#         for ngram_type, corpus_data in collocations.items():
+#             f.write(f"{ngram_type} collocations:\n")
+#             for corpus, ngrams in corpus_data.items():
+#                 f.write(f"{corpus} corpus:\n")
+#                 for ngram, score in ngrams:
+#                     ngram_str = ' '.join(ngram)
+#                     f.write(f"{ngram_str}\n")
+#                 f.write("\n")
+
 def write_collocations_to_file(collocations, file_path):
-    # writes the collocations to a text file
+    # the instructions require a specific format in the output file for collocations
+    # we have a structure like:
+    # "Two-gram":{"Frequency":{"Committee":[...],"Plenary":[...]}, "TF-IDF":{...}}
+    # must follow instructions for printing order and formatting.
     with open(file_path, 'w', encoding='utf-8') as f:
-        for ngram_type, corpus_data in collocations.items():
+        # according to instructions:
+        # Two-gram collocations:
+        # Frequency:
+        # Committee corpus:
+        # <10 collocations>
+        # <empty line>
+        # Plenary corpus:
+        # <10 collocations>
+        # <empty line>
+        # TF-IDF:
+        # same pattern as Frequency
+        # and so forth for Three-gram and Four-gram
+        for ngram_type, metrics in collocations.items():
             f.write(f"{ngram_type} collocations:\n")
-            for corpus, ngrams in corpus_data.items():
-                f.write(f"{corpus} corpus:\n")
-                for ngram, score in ngrams:
-                    ngram_str = ' '.join(ngram)
-                    f.write(f"{ngram_str}\n")
-                f.write("\n")
+            # frequency
+            f.write("Frequency:\n")
+            f.write("Committee corpus:\n")
+            for ng,score in metrics["Frequency"]["Committee"]:
+                ngram_str=' '.join(ng)
+                f.write(f"{ngram_str}\n")
+            f.write("\n")
+            f.write("Plenary corpus:\n")
+            for ng,score in metrics["Frequency"]["Plenary"]:
+                ngram_str=' '.join(ng)
+                f.write(f"{ngram_str}\n")
+            f.write("\n")
+
+            # TF-IDF
+            f.write("TF-IDF:\n")
+            f.write("Committee corpus:\n")
+            for ng,score in metrics["TF-IDF"]["Committee"]:
+                ngram_str=' '.join(ng)
+                f.write(f"{ngram_str}\n")
+            f.write("\n")
+            f.write("Plenary corpus:\n")
+            for ng,score in metrics["TF-IDF"]["Plenary"]:
+                ngram_str=' '.join(ng)
+                f.write(f"{ngram_str}\n")
+            f.write("\n")
 
 def write_sampled_sentences_to_files(original, masked, output_dir):
     # writes the original and masked sampled sentences to files
-    with open(os.path.join(output_dir, 'sampled_sents_original.txt'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(output_dir, 'original_sampled_sents.txt'), 'w', encoding='utf-8') as f:
         for sentence in original:
             f.write(sentence + '\n')
 
-    with open(os.path.join(output_dir, 'sampled_sents_masked.txt'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(output_dir, 'masked_sampled_sents.txt'), 'w', encoding='utf-8') as f:
         for sentence in masked:
             f.write(sentence + '\n')
 
@@ -215,21 +261,54 @@ def main(corpus_file, output_dir):
     plenary_model = TrigramLanguageModel(plenary_df['sentence_text'], lambdas)
 
     # 5. extract collocations
-    collocations = {
-        "Two-gram": {
-            "Committee": get_k_n_t_collocations(10, 2, 5, committee_df, "frequency"),
-            "Plenary": get_k_n_t_collocations(10, 2, 5, plenary_df, "frequency")
+    # collocations = {
+    #     "Two-gram": {
+    #         "Committee": get_k_n_t_collocations(10, 2, 5, committee_df, "frequency"),
+    #         "Plenary": get_k_n_t_collocations(10, 2, 5, plenary_df, "frequency")
+    #     },
+    #     "Three-gram": {
+    #         "Committee": get_k_n_t_collocations(10, 3, 5, committee_df, "tfidf"),
+    #         "Plenary": get_k_n_t_collocations(10, 3, 5, plenary_df, "tfidf")
+    #     },
+    #     "Four-gram": {
+    #         "Committee": get_k_n_t_collocations(10, 4, 5, committee_df, "frequency"),
+    #         "Plenary": get_k_n_t_collocations(10, 4, 5, plenary_df, "frequency")
+    #     }
+    # }
+    # write_collocations_to_file(collocations, os.path.join(output_dir, 'knesset_collocations.txt'))
+
+    # extract collocations
+    two_freq_comm  = get_k_n_t_collocations(10,2,5,committee_df,"frequency")
+    two_freq_plen  = get_k_n_t_collocations(10,2,5,plenary_df,"frequency")
+    two_tfidf_comm = get_k_n_t_collocations(10,2,5,committee_df,"tfidf")
+    two_tfidf_plen = get_k_n_t_collocations(10,2,5,plenary_df,"tfidf")
+
+    three_freq_comm= get_k_n_t_collocations(10,3,5,committee_df,"frequency")
+    three_freq_plen= get_k_n_t_collocations(10,3,5,plenary_df,"frequency")
+    three_tfidf_comm= get_k_n_t_collocations(10,3,5,committee_df,"tfidf")
+    three_tfidf_plen= get_k_n_t_collocations(10,3,5,plenary_df,"tfidf")
+
+    four_freq_comm= get_k_n_t_collocations(10,4,5,committee_df,"frequency")
+    four_freq_plen= get_k_n_t_collocations(10,4,5,plenary_df,"frequency")
+    four_tfidf_comm= get_k_n_t_collocations(10,4,5,committee_df,"tfidf")
+    four_tfidf_plen= get_k_n_t_collocations(10,4,5,plenary_df,"tfidf")
+
+    collocations_data = {
+        "Two-gram":{
+            "Frequency":{"Committee":two_freq_comm,"Plenary":two_freq_plen},
+            "TF-IDF":{"Committee":two_tfidf_comm,"Plenary":two_tfidf_plen}
         },
-        "Three-gram": {
-            "Committee": get_k_n_t_collocations(10, 3, 5, committee_df, "tfidf"),
-            "Plenary": get_k_n_t_collocations(10, 3, 5, plenary_df, "tfidf")
+        "Three-gram":{
+            "Frequency":{"Committee":three_freq_comm,"Plenary":three_freq_plen},
+            "TF-IDF":{"Committee":three_tfidf_comm,"Plenary":three_tfidf_plen}
         },
-        "Four-gram": {
-            "Committee": get_k_n_t_collocations(10, 4, 5, committee_df, "frequency"),
-            "Plenary": get_k_n_t_collocations(10, 4, 5, plenary_df, "frequency")
+        "Four-gram":{
+            "Frequency":{"Committee":four_freq_comm,"Plenary":four_freq_plen},
+            "TF-IDF":{"Committee":four_tfidf_comm,"Plenary":four_tfidf_plen}
         }
     }
-    write_collocations_to_file(collocations, os.path.join(output_dir, 'knesset_collocations.txt'))
+
+    write_collocations_to_file(collocations_data, os.path.join(output_dir,'collocations_knesset.txt'))
 
     # 6. sample 10 committee sentences
     sample_sentences = random.sample(committee_df['sentence_text'].tolist(), 10)
@@ -267,7 +346,7 @@ def main(corpus_file, output_dir):
 
     # 9. compute perplexity
     perplexity = compute_perplexity(plenary_model, masked_sentences, filled_sentences)
-    with open(os.path.join(output_dir, 'result_perplexity.txt'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(output_dir, 'perplexity_result.txt'), 'w', encoding='utf-8') as f:
         f.write(f'{perplexity:.2f}\n')
 
 if __name__ == '__main__':
