@@ -155,7 +155,7 @@ def write_collocations_to_file(collocations, file_path):
                 f.write(f"{corpus} corpus:\n")
                 for ngram, score in ngrams:
                     ngram_str = ' '.join(ngram)
-                    f.write(f"{ngram_str} ({score:.2f})\n")
+                    f.write(f"{ngram_str}\n")
                 f.write("\n")
 
 def write_sampled_sentences_to_files(original, masked, output_dir):
